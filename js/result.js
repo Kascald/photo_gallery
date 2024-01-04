@@ -22,13 +22,6 @@ function removeClass(elem, className) {
 function addClass(elem, className) {
     elem.setAttribute('class', className);
 }
-//gpt 제시 추가 점
-
-//togle 기능 이용으로 removeClass , addClass 삭제
-//=>
-// function toggleClass(elem, className) {
-//     elem.classList.toggle(className);
-// }
 
 function toggleClass(elem, className) {
     elem.classList.toggle(className);
@@ -80,9 +73,6 @@ function newThmbs(direction) {
         toggleClass($currentView, 'on');
         toggleClass($thmb.children[1].children[next_index], 'on');
         console.log($thmb.children[1].children[next_index]);
-        //gpt 제안 togle 추가시 수정
-        // $currentView && removeClass($currentView, 'on');
-        // addClass($thmb.children[1].children[next_index], 'on');
-        // console.log($thmb.children[1].children[next_index]);
+
     }
 }
